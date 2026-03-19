@@ -1,5 +1,5 @@
 name: cece0719 the shop
-version: 1.2.75
+version: 1.2.76
 slug: wallpad
 description: 테스트
 arch:
@@ -10,7 +10,7 @@ arch:
   - i386
 map:
   - share:rw
-url: https://github.com/cece0719/ha-addon
+url: https://github.com/cece0719/ha-addons-copilot
 ports:
   8001/tcp: 8001
 startup: application
