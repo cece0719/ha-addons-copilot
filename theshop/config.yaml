@@ -1,0 +1,42 @@
+name: cece0719 the shop
+version: 1.2.75
+slug: wallpad
+description: 테스트
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+map:
+  - share:rw
+url: https://github.com/cece0719/ha-addon
+ports:
+  8001/tcp: 8001
+startup: application
+boot: auto
+uart: true
+options:
+#  type: serial
+  logLevel: INFO
+  includeList: nothing
+  excludeList: f7 0e#조명;f7 12#가스;f7 30#검침;f7 33#일괄소등;f7 36#난방;f7 39#POWEROUTLET?;f7 40#문열기관련;f7 60#이거뭐지
+#  serial:
+#    port: "/dev/ttyUSB0"
+#  socket:
+#    port: 8899
+#  mqtt:
+#    server: 192.168.x.x
+#    receiveDelay: 10000
+schema:
+#  type: list(serial|socket)
+  logLevel: list(DEBUG|INFO)
+  includeList: str
+  excludeList: str
+#  serial:
+#    port: str?
+#  socket:
+#    port: int?
+#  mqtt:
+#    server: str
+#    receiveDelay: int
